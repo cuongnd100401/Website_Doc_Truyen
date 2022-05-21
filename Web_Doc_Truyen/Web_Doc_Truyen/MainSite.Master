@@ -19,16 +19,54 @@
                         <i class="fa-solid fa-book" style="font-size: 30px;"></i>
                         <h2 style="margin-left: 10px;">MỌT TRUYỆN</h2>
                     </div>
-                    <div class="H1-c">
-
+                    <div class="H1-c2">
+                        <div class="H1-c2-it dmhv">
+                            <i class="fa-solid fa-list marginr"></i>
+                            Danh Sách
+                            <i class="fa-solid fa-caret-down marginl"></i>
+                            <div class="DM">
+                                <ul style="padding: 0;" class="DM-list">
+                                    <asp:DataList ID="DLDM" runat="server">
+                                        <ItemTemplate>
+                                            <div class="DM-it">
+                                                <%#Eval("TenDM") %>
+                                            </div>
+                                        </ItemTemplate>
+                                    </asp:DataList>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="H1-c2-it dmtl">
+                            <i class="fa-solid fa-list marginr"></i>
+                            Thể Loại
+                            <i class="fa-solid fa-caret-down marginl"></i>
+                            <div class="TL">
+                                <ul class="TL-list" style="padding: 0;">
+                                    <asp:DataList ID="DLTL" runat="server">
+                                        <ItemTemplate>
+                                            <div class="DM-it">
+                                                <%#Eval("TenTL") %>
+                                            </div>
+                                        </ItemTemplate>
+                                    </asp:DataList>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
-                    <div class="H1-c">
-
+                    <div class="H1-c3">
+                        <div class="search-contairner">
+                            <input class="ip-search" placeholder="Tìm kiếm..." />
+                            <button class="btn-search">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </button>
+                        </div>
                     </div>
                 </div>
             </div>
             <div class="H-M-2">
-
+                <div class="Nguon">
+                    Mọt Truyện - Website được phát triển bởi nhóm 6 môn Các mô hình phần mềm.
+                </div>
             </div>
         </div>
         <div>

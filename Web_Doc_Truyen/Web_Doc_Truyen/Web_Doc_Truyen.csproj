@@ -2114,6 +2114,7 @@
     <Content Include="fonts\fontawesome-free-6.1.1-web\svgs\solid\yin-yang.svg" />
     <Content Include="fonts\fontawesome-free-6.1.1-web\svgs\solid\z.svg" />
     <Content Include="HomePage.aspx" />
+    <Content Include="imgTruyen\nghichhanh.png" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
