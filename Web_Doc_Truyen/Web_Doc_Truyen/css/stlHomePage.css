@@ -1,0 +1,40 @@
+﻿.HomePage{
+    width: 100%;
+    min-height: 300px;
+}
+.TieuDe{
+    width: 75%;
+    margin-left: 13%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    font-size: 21px;
+    font-family: Arial;
+    color: white;
+}
+.DSTuyen {
+    width: 75%;
+    margin-left: 13%;
+    min-height: 200px;
+}
+.Truyen-it{
+    width: 170px;
+    height: 226px;
+    background-color: blue;
+    margin-bottom: 20px;
+    margin-left: 30px;
+}
+.tenTruyen {
+    margin: -43px 0 0 0;
+    position: absolute;
+    width: 170px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 3;
+    color: white;
+    background-color: rgba(18, 18, 18, .75);
+    font-size: 15px;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+}
