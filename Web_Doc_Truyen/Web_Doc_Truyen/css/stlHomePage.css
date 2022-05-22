@@ -8,9 +8,10 @@
     height: 70px;
     display: flex;
     align-items: center;
-    font-size: 21px;
+    font-size: 23px;
     font-family: Arial;
     color: white;
+    text-transform: uppercase;
 }
 .DSTuyen {
     width: 75%;
@@ -37,4 +38,14 @@
     background-color: rgba(18, 18, 18, .75);
     font-size: 15px;
     font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+/*TruyenPage*/
+.DLT-it {
+    width: 800px;
+    height: 90px;
+    background-color: #18191A;
+    margin: 10px 10px 0 0;
+    display: flex;
+    color: #AAAAAA;
 }

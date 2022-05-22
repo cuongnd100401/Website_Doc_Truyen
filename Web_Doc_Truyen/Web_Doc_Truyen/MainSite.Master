@@ -29,9 +29,11 @@
                                 <ul style="padding: 0;" class="DM-list">
                                     <asp:DataList ID="DLDM" runat="server">
                                         <ItemTemplate>
-                                            <div class="DM-it">
-                                                <%#Eval("TenDM") %>
-                                            </div>
+                                            <a href="TruyenPage.aspx?ID=DM<%#Eval("MaDM") %>" style="text-decoration: none;">
+                                                <div class="DM-it">
+                                                    <%#Eval("TenDM") %>
+                                                </div>
+                                            </a>
                                         </ItemTemplate>
                                     </asp:DataList>
                                 </ul>
@@ -45,9 +47,11 @@
                                 <ul class="TL-list" style="padding: 0;">
                                     <asp:DataList ID="DLTL" runat="server">
                                         <ItemTemplate>
-                                            <div class="DM-it">
-                                                <%#Eval("TenTL") %>
-                                            </div>
+                                            <a href="TruyenPage.aspx?ID=TL<%#Eval("MaTL") %>" style="text-decoration: none;">
+                                                <div class="DM-it">
+                                                    <%#Eval("TenTL") %>
+                                                </div>
+                                            </a>
                                         </ItemTemplate>
                                     </asp:DataList>
                                 </ul>
