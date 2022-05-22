@@ -49,3 +49,18 @@
     display: flex;
     color: #AAAAAA;
 }
+.DLT-it-c2 {
+    margin-top: 9px;
+    width: 400px;
+    height: 80%;
+}
+.DLT-c2-c {
+    height: 36px;
+    width: 360px;
+    margin-left: 40px;
+    display: flex;
+    color: #A9A9A9;
+    align-items: center;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    font-size: 19px;
+}

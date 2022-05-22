@@ -14,13 +14,20 @@
                             <img src="<%#Eval("HinhAnh") %>"  style="width: 180px; height: 80px; object-fit: cover; object-position: 100% 40%;"/>
                         </div>
                         <div class="DLT-it-c2">
-                            <a>
-
-                            </a>
+                            <div class="DLT-c2-c">
+                                <a href="#" style="text-decoration: none; color: #A9A9A9; font-size: 19px;">
+                                    <i class="fa-solid fa-book marginr"></i>
+                                    <%#Eval("TenT") %>
+                                </a>
+                            </div>
+                            <div class="DLT-c2-c">
+                                <i class="fa-solid fa-pen marginr"></i>
+                                <%#Eval("TenTG") %>
+                            </div>
                         </div>
-                        <a href="#">
-                            <div style="height: 100%; display: flex; align-items: center; justify-content: center; width: 200px;">
-                                <%#Eval("soCT") %>CHƯƠNG
+                        <a href="#" style="text-decoration: none;">
+                            <div style="height: 100%; display: flex; align-items: center; justify-content: center; width: 200px; color: #92BB35; font-family: Arial;">
+                                <%#Eval("soCT") %> CHƯƠNG
                             </div>
                         </a>
                         

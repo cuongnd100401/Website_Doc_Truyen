@@ -61,7 +61,7 @@ namespace Web_Doc_Truyen
             if (loaiTruyen.Equals("DM"))
             {
                 com = con.CreateCommand();
-                com.CommandText = "Select tblTruyen.MaT, tblTruyen.TenT, tblTruyen.HinhAnh, (select count(tblChuongTruyen.MaCT) from tblChuongTruyen where tblChuongTruyen.MaT= tblTruyen.MaT) as soCT from tblTruyen where tblTruyen.MaDM=" + Ma;
+                com.CommandText = "Select tblTruyen.MaT, tblTruyen.TenT, tblTruyen.HinhAnh, tblTacGia.TenTG, (select count(tblChuongTruyen.MaCT) from tblChuongTruyen where tblChuongTruyen.MaT= tblTruyen.MaT) as soCT from tblTacGia, tblTruyen where tblTacGia.MaTG= tblTruyen.MaTG and tblTruyen.MaDM=" + Ma;
                 dad.SelectCommand = com;
                 DataSet ds = new DataSet();
                 dad.Fill(ds);
@@ -71,7 +71,7 @@ namespace Web_Doc_Truyen
             else
             {
                 com = con.CreateCommand();
-                com.CommandText = "Select tblTruyen.MaT, tblTruyen.TenT, tblTruyen.HinhAnh, (select count(tblChuongTruyen.MaCT) from tblChuongTruyen where tblChuongTruyen.MaT= tblTruyen.MaT) as soCT from tblTruyen where tblTruyen.MaTL=" + Ma;
+                com.CommandText = "Select tblTruyen.MaT, tblTruyen.TenT, tblTruyen.HinhAnh, tblTacGia.TenTG, (select count(tblChuongTruyen.MaCT) from tblChuongTruyen where tblChuongTruyen.MaT= tblTruyen.MaT) as soCT from tblTacGia, tblTruyen where tblTacGia.MaTG= tblTruyen.MaTG and tblTruyen.MaTL=" + Ma;
                 dad.SelectCommand = com;
                 DataSet ds = new DataSet();
                 dad.Fill(ds);
