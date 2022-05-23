@@ -24,6 +24,7 @@ namespace Web_Doc_Truyen
             con = new SqlConnection(str);
             con.Open();
             loadDetail();
+            loadDSChuongTruyen();
         }
         public void loadDetail()
         {
@@ -37,7 +38,21 @@ namespace Web_Doc_Truyen
                 imgTruyen.Attributes["src"] = r["HinhAnh"].ToString();
                 lbTenTruyen.Text= r["TenT"].ToString();
                 lbMota.Text= r["Mota"].ToString();
+                lbTacGia.Text="Tác Giả: "+ r["TenTG"].ToString(); ;
+                lbTheLoai.Text="Thể Loại: "+ r["TenTL"].ToString(); 
+                lbNguon.Text="Nguồn: "+ r["Nguon"].ToString(); 
+                lbTrangThai.Text="Trạng Thái: "+ r["TrangThai"].ToString();
             }
+        }
+        public void loadDSChuongTruyen()
+        {
+            com = con.CreateCommand();
+            com.CommandText = "select ROW_NUMBER() OVER (ORDER BY MaCT) AS stt,  * from tblChuongTruyen where MaT= " + Ma;
+            dad.SelectCommand = com;
+            DataSet ds = new DataSet();
+            dad.Fill(ds);
+            DLCT.DataSource = ds;
+            DLCT.DataBind();
         }
     }
 }

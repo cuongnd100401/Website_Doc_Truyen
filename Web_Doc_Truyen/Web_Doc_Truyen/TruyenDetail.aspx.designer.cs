@@ -24,6 +24,42 @@ namespace Web_Doc_Truyen
         protected global::System.Web.UI.HtmlControls.HtmlImage imgTruyen;
 
         /// <summary>
+        /// lbTacGia control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lbTacGia;
+
+        /// <summary>
+        /// lbTheLoai control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lbTheLoai;
+
+        /// <summary>
+        /// lbNguon control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lbNguon;
+
+        /// <summary>
+        /// lbTrangThai control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lbTrangThai;
+
+        /// <summary>
         /// lbTenTruyen control.
         /// </summary>
         /// <remarks>
@@ -40,5 +76,14 @@ namespace Web_Doc_Truyen
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label lbMota;
+
+        /// <summary>
+        /// DLCT control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DataList DLCT;
     }
 }

@@ -15,7 +15,7 @@
                         </div>
                         <div class="DLT-it-c2">
                             <div class="DLT-c2-c">
-                                <a href="#" style="text-decoration: none; color: #A9A9A9; font-size: 19px;">
+                                <a href="TruyenDetail.aspx?ID=<%#Eval("MaT") %>" style="text-decoration: none; color: #A9A9A9; font-size: 19px;">
                                     <i class="fa-solid fa-book marginr"></i>
                                     <%#Eval("TenT") %>
                                 </a>
@@ -25,12 +25,11 @@
                                 <%#Eval("TenTG") %>
                             </div>
                         </div>
-                        <a href="#" style="text-decoration: none;">
+                        <a href="TruyenDetail.aspx?ID=<%#Eval("MaT") %>" style="text-decoration: none;">
                             <div style="height: 100%; display: flex; align-items: center; justify-content: center; width: 200px; color: #92BB35; font-family: Arial;">
                                 <%#Eval("soCT") %> CHƯƠNG
                             </div>
                         </a>
-                        
                     </div>
                 </ItemTemplate>
             </asp:DataList>
