@@ -67,6 +67,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="ChuongTruyenDetail.aspx" />
     <Content Include="css\stlMainSite.css" />
     <Content Include="css\stlHomePage.css" />
     <Content Include="fonts\fontawesome-free-6.1.1-web\css\all.css" />
@@ -2123,6 +2124,13 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ChuongTruyenDetail.aspx.cs">
+      <DependentUpon>ChuongTruyenDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ChuongTruyenDetail.aspx.designer.cs">
+      <DependentUpon>ChuongTruyenDetail.aspx</DependentUpon>
+    </Compile>
     <Compile Include="HomePage.aspx.cs">
       <DependentUpon>HomePage.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

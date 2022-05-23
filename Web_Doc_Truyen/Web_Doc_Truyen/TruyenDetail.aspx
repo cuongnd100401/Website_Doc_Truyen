@@ -40,14 +40,12 @@
         <div class="DSChuong">
             <asp:DataList ID="DLCT" runat="server" RepeatColumns="2">
                 <ItemTemplate>
-                    <a href="#" style="text-decoration: none;">
+                    <a href="ChuongTruyenDetail.aspx?ID=<%#Eval("MaCT") %>" style="text-decoration: none;">
                         <div class="ct">
                             <i class="fa-solid fa-star-of-life marginr"></i>
                             Chương <%#Eval("stt") %>: <%#Eval("TenCT") %>
-
                         </div>
                     </a>
-                    
                 </ItemTemplate>
             </asp:DataList>
         </div>

@@ -128,3 +128,26 @@
     font-family: Arial;
     margin-left: 140px;
 }
+/*Chuong Truyen Detail*/
+.ct-TenT {
+    width: 75%;
+    margin-left: 13%;
+    height: 60px;
+    color: #92BB35;
+    font-size: 25px;
+    font-family: Arial;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.ct-TenCT {
+    width: 75%;
+    margin-left: 13%;
+    height: 30px;
+    color: #A5A5A5;
+    font-size: 19px;
+    font-family: Arial;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
