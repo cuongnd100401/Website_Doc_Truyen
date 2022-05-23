@@ -12,5 +12,9 @@
         <div class="ct-TenCT">
             <asp:Label ID="lbTenCT" runat="server" Text=""></asp:Label>
         </div>
+        <div class="ct-control">
+            <asp:Button ID="btnTruoc" runat="server" Text="Chương trước" CssClass="btnControl"/>
+            <asp:Button ID="btnSau" runat="server" Text="Chương tiếp" CssClass="btnControl"/>
+        </div>
     </div>
 </asp:Content>
