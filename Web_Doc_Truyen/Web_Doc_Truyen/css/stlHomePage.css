@@ -64,3 +64,39 @@
     font-family: "Comic Sans MS", cursive, sans-serif;
     font-size: 19px;
 }
+
+/*Truyện Detail*/
+.Detail{
+    height: 500px;
+    width: 75%;
+    margin-left: 13%;
+    display: flex;
+}
+.Detail-contairner1 {
+    height: 500px;
+    width: 30%;
+    color: #A5A5A5;
+}
+.Detail-contairner2 {
+    height: 500px;
+    width: 60%;
+    color: #A5A5A5;
+}
+.img-D{
+    height: 300px;
+    width: 225px;
+    margin-left: 17%;
+    margin-top: 30px;
+}
+.Ten-D {
+    width: 90%;
+    margin-left: 5%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    border-bottom: 2px solid black;
+    margin-bottom: 10px;
+}

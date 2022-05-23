@@ -17,8 +17,10 @@
             <div class="H-M-1">
                 <div class="H1-contairner">
                     <div class="H1-c1">
-                        <i class="fa-solid fa-book" style="font-size: 30px;"></i>
-                        <h2 style="margin-left: 10px;">MỌT TRUYỆN</h2>
+                        <a href="HomePage.aspx" style="text-decoration: none; display: flex; align-items: center; color: white;">
+                            <i class="fa-solid fa-book" style="font-size: 30px;"></i>
+                            <h2 style="margin-left: 10px;">MỌT TRUYỆN</h2>
+                        </a>
                     </div>
                     <div class="H1-c2">
                         <div class="H1-c2-it dmhv">

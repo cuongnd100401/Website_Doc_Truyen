@@ -10,7 +10,7 @@
         <div class="DSTuyen">
             <asp:DataList ID="DLTH" runat="server" RepeatColumns="5" CssClass="">
                 <ItemTemplate>
-                    <a href="#">
+                    <a href="TruyenDetail.aspx?ID=<%#Eval("MaT") %>">
                         <div class="Truyen-it">
                             <img src="<%#Eval("HinhAnh") %>" style="width: 170px; height: 226px;"/>
                             <p class="tenTruyen"><%#Eval("TenT") %></p>
