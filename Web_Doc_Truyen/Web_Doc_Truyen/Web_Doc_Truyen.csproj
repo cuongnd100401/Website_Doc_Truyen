@@ -68,6 +68,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="ChuongTruyenDetail.aspx" />
+    <Content Include="css\stlLogin.css" />
     <Content Include="css\stlMainSite.css" />
     <Content Include="css\stlHomePage.css" />
     <Content Include="fonts\fontawesome-free-6.1.1-web\css\all.css" />
@@ -2119,6 +2120,7 @@
     <Content Include="imgTruyen\doremon.png" />
     <Content Include="imgTruyen\mevokhongloive.png" />
     <Content Include="imgTruyen\nghichhanh.png" />
+    <Content Include="LoginPage.aspx" />
     <Content Include="TruyenDetail.aspx" />
     <Content Include="TruyenPage.aspx" />
     <Content Include="Web.config" />
@@ -2137,6 +2139,20 @@
     </Compile>
     <Compile Include="HomePage.aspx.designer.cs">
       <DependentUpon>HomePage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LoginPage.aspx.cs">
+      <DependentUpon>LoginPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LoginPage.aspx.designer.cs">
+      <DependentUpon>LoginPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LoginSite.Master.cs">
+      <DependentUpon>LoginSite.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LoginSite.Master.designer.cs">
+      <DependentUpon>LoginSite.Master</DependentUpon>
     </Compile>
     <Compile Include="MainSite.Master.cs">
       <DependentUpon>MainSite.Master</DependentUpon>
@@ -2214,6 +2230,7 @@
     <Content Include="fonts\fontawesome-free-6.1.1-web\webfonts\fa-v4compatibility.ttf" />
     <Content Include="fonts\fontawesome-free-6.1.1-web\webfonts\fa-v4compatibility.woff2" />
     <Content Include="MainSite.Master" />
+    <Content Include="LoginSite.Master" />
     <None Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
