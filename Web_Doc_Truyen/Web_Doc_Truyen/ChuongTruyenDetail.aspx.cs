@@ -19,6 +19,10 @@ namespace Web_Doc_Truyen
         string id = "";
         string MaCT = "";
         string MaT = "";
+        string chuonght = "";
+        int tongchuong = 0;
+        string NoiDung = "";
+        
 
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -45,15 +49,88 @@ namespace Web_Doc_Truyen
             dad.SelectCommand = com;
             dt.Clear();
             dad.Fill(dt);
+            tongchuong = 0;
             foreach (DataRow r in dt.Rows)
             {
                 if (MaCT.Equals(r["MaCT"].ToString()))
                 {
                     lbTenT.Text = r["TenT"].ToString();
                     lbTenCT.Text ="Chương "+ r["stt"].ToString()+": "+ r["TenCT"].ToString();
+                    chuonght = r["stt"].ToString();
+                    NoiDung= r["NoiDung"].ToString();
+                    loadND(NoiDung);
                 }
+                tongchuong++;
+            }
+        }
+        public void loadND(string ND)
+        {
+            DataTable dtND = new DataTable();
+            DataColumn nd = new DataColumn("nd");
+            dtND.Columns.Add(nd);
+            char[] delimiterChars = { '”', '.' };
+            string[] words = ND.Split(delimiterChars);
+            for (int i = 0; i < words.Length; i++)
+            {
+                if (words[i].Contains("“"))
+                {
+                    words[i] += "”";
+                }
+                else if (words[i].Contains("."))
+                {
+                    words[i] += "..";
+                }
+                else
+                {
+                    words[i] += ".";
+                }
+                DataRow row = dtND.NewRow();
+                row["nd"] = words[i];
+                dtND.Rows.Add(row);
+            }
+            DataSet ds = new DataSet();
+            ds.Tables.Add(dtND);
+            DLND.DataSource = ds;
+            DLND.DataBind();
+        }
+
+        protected void btnSau_Click(object sender, EventArgs e)
+        {
+            if (chuonght.Equals(tongchuong.ToString()))
+            {
+                return;
+            }
+            else
+            {
+                int cht = int.Parse(chuonght) + 1;
+                string MaSau = getMaCT(cht.ToString());
+                Response.Redirect("ChuongTruyenDetail.aspx?ID=" + MaSau);
             }
         }
 
+        protected void btnTruoc_Click(object sender, EventArgs e)
+        {
+            if (chuonght.Equals("1")){
+                return;
+            }
+            else
+            {
+                int cht = int.Parse(chuonght) - 1;
+                string MaTruoc = getMaCT(cht.ToString());
+                Response.Redirect("ChuongTruyenDetail.aspx?ID=" + MaTruoc);
+            }
+        }
+        public string getMaCT(string numCT)
+        {
+            string kq = "";
+            foreach (DataRow r in dt.Rows)
+            {
+                if (numCT.Equals(r["stt"].ToString()))
+                {
+                    kq = r["MaCT"].ToString();
+                }
+            }
+            return kq;
+        }
     }
 }
