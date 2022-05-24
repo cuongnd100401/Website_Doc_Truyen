@@ -9,14 +9,17 @@
             </div>
             <div class="ip-contairner">
                 <div>
-                    <input type="text" placeholder="Your username..."  class="ip-login"/>
+                    <input type="text" runat="server" id="txtUsername" placeholder="Your username..."  class="ip-login"/>
                 </div>
                 <div>
-                    <input type="text" placeholder="Your password..."  class="ip-login"/>
+                    <input type="password" runat="server" id="txtPassword" placeholder="Your password..."  class="ip-login"/>
                 </div>
             </div>
             <div class="btn-contairner">
-                <asp:Button ID="Button1" runat="server" Text="Login" CssClass="btnLogin"/>
+                <asp:Button ID="tbnLogin" runat="server" Text="Login" CssClass="btnLogin" OnClick="tbnLogin_Click"/>
+            </div>
+            <div class="lb-contairner">
+                <asp:Label ID="lbTB" runat="server" Text="" CssClass="lbTB"></asp:Label>
             </div>
         </div>
         

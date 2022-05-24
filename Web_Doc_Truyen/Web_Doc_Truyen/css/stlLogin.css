@@ -14,7 +14,7 @@
 }
 .Login-contairner{
     width: 40%;
-    height: 340px;
+    height: 370px;
     background-color: #212121;
     border-radius: 3px;
     border: 1px solid white;
@@ -53,4 +53,14 @@
     border: 2px solid #82A82D;
     border-radius: 3px;
     cursor: pointer;
+}
+.lb-contairner {
+    height: 40px;
+    width: 50%;
+    margin-left: 25%;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: red;
 }

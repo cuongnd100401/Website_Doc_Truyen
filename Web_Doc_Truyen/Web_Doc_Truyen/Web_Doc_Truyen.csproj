@@ -67,6 +67,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="AdminHP.aspx" />
     <Content Include="ChuongTruyenDetail.aspx" />
     <Content Include="css\stlLogin.css" />
     <Content Include="css\stlMainSite.css" />
@@ -2116,6 +2117,7 @@
     <Content Include="fonts\fontawesome-free-6.1.1-web\svgs\solid\yen-sign.svg" />
     <Content Include="fonts\fontawesome-free-6.1.1-web\svgs\solid\yin-yang.svg" />
     <Content Include="fonts\fontawesome-free-6.1.1-web\svgs\solid\z.svg" />
+    <Content Include="Global.asax" />
     <Content Include="HomePage.aspx" />
     <Content Include="imgTruyen\doremon.png" />
     <Content Include="imgTruyen\mevokhongloive.png" />
@@ -2126,12 +2128,29 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AdminHP.aspx.cs">
+      <DependentUpon>AdminHP.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminHP.aspx.designer.cs">
+      <DependentUpon>AdminHP.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminSite.Master.cs">
+      <DependentUpon>AdminSite.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminSite.Master.designer.cs">
+      <DependentUpon>AdminSite.Master</DependentUpon>
+    </Compile>
     <Compile Include="ChuongTruyenDetail.aspx.cs">
       <DependentUpon>ChuongTruyenDetail.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="ChuongTruyenDetail.aspx.designer.cs">
       <DependentUpon>ChuongTruyenDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="HomePage.aspx.cs">
       <DependentUpon>HomePage.aspx</DependentUpon>
@@ -2231,6 +2250,7 @@
     <Content Include="fonts\fontawesome-free-6.1.1-web\webfonts\fa-v4compatibility.woff2" />
     <Content Include="MainSite.Master" />
     <Content Include="LoginSite.Master" />
+    <Content Include="AdminSite.Master" />
     <None Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
