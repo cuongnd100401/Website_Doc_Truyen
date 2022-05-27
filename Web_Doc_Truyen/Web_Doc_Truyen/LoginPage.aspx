@@ -22,6 +22,5 @@
                 <asp:Label ID="lbTB" runat="server" Text="" CssClass="lbTB"></asp:Label>
             </div>
         </div>
-        
     </div>
 </asp:Content>

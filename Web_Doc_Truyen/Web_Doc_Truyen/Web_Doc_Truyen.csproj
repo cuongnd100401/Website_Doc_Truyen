@@ -69,6 +69,7 @@
   <ItemGroup>
     <Content Include="AdminHP.aspx" />
     <Content Include="ChuongTruyenDetail.aspx" />
+    <Content Include="css\stlAdmin.css" />
     <Content Include="css\stlLogin.css" />
     <Content Include="css\stlMainSite.css" />
     <Content Include="css\stlHomePage.css" />
@@ -2123,6 +2124,7 @@
     <Content Include="imgTruyen\mevokhongloive.png" />
     <Content Include="imgTruyen\nghichhanh.png" />
     <Content Include="LoginPage.aspx" />
+    <Content Include="QLTruyen.aspx" />
     <Content Include="TruyenDetail.aspx" />
     <Content Include="TruyenPage.aspx" />
     <Content Include="Web.config" />
@@ -2181,6 +2183,13 @@
       <DependentUpon>MainSite.Master</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="QLTruyen.aspx.cs">
+      <DependentUpon>QLTruyen.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="QLTruyen.aspx.designer.cs">
+      <DependentUpon>QLTruyen.aspx</DependentUpon>
+    </Compile>
     <Compile Include="TruyenDetail.aspx.cs">
       <DependentUpon>TruyenDetail.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
