@@ -36,7 +36,7 @@
         <div class="Contairner-HomePage-Ad">
             <div class="Contairner-HP-Ad-List">
                 <div class="Item">
-                    <a href="QLspPage.aspx" class="nav-Item-HP-Ad">
+                    <a href="QLTruyen.aspx" class="nav-Item-HP-Ad">
                         <p style="font-size: 20px; font-weight: 600; margin-left: 10px;">Quản lý Truyện</p>
                     </a>
                     <a href="QLDH.aspx" class="nav-Item-HP-Ad">

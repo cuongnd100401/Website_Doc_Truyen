@@ -656,3 +656,31 @@
 }
 /*MessageAd*/
 
+
+/*QL TacGia*/
+.row-TG{
+    height: 40px;
+    width: 500px;
+    background-color: red;
+    display: flex;
+    padding: 0;
+}
+.MaTG-Collumm{
+    height: 38px;
+    width: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #65676B;
+}
+.TenTG-Collumm {
+    height: 38px;
+    width: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #65676B;
+}
+.more-TG{
+
+}

@@ -17,11 +17,11 @@
                     <asp:TextBox ID="txtTenT" runat="server" CssClass="ip-QL" autocomplete="off"></asp:TextBox>
                 </div>
                 <div class="Input-Contairner-QL-Item">
-                    <asp:Label ID="Label3" runat="server" Text="Mã DM: " CssClass="lb-QL"></asp:Label>
+                    <asp:Label ID="Label3" runat="server" Text="Danh Mục: " CssClass="lb-QL"></asp:Label>
                     <asp:TextBox ID="txtMaDM" runat="server" CssClass="ip-QL" autocomplete="off"></asp:TextBox>
                 </div>
                 <div class="Input-Contairner-QL-Item">
-                    <asp:Label ID="Label4" runat="server" Text="Mã SP: " CssClass="lb-QL"></asp:Label>
+                    <asp:Label ID="Label4" runat="server" Text="Thể Loại: " CssClass="lb-QL"></asp:Label>
                     <asp:TextBox ID="txtMaTL" runat="server" CssClass="ip-QL" autocomplete="off"></asp:TextBox>
                 </div>
                 <div class="Input-Contairner-QL-Item">
@@ -46,10 +46,10 @@
                 </div>
                 <asp:Label ID="lbThongBao" runat="server" CssClass="lbTB-QL"></asp:Label>
                 <div class="Input-Contairner-QL-Item" style="display: flex; justify-content: space-around; height: 70px;">
-                    <asp:Button ID="Button2" runat="server" CssClass="btnIp" Text="Thêm SP"/>
-                    <asp:Button ID="Button3" runat="server" CssClass="btnIp" Text="Sửa SP"/>
-                    <asp:Button ID="Button4" runat="server" CssClass="btnIp" Text="Xóa SP"/>
-                    <asp:Button ID="Button1" runat="server" CssClass="btnIp" Text="Làm Tươi"/>
+                    <asp:Button ID="Button2" runat="server" CssClass="btnIp" Text="Thêm SP" OnClick="Button2_Click"/>
+                    <asp:Button ID="Button3" runat="server" CssClass="btnIp" Text="Sửa SP" OnClick="Button3_Click"/>
+                    <asp:Button ID="Button4" runat="server" CssClass="btnIp" Text="Xóa SP" OnClick="Button4_Click"/>
+                    <asp:Button ID="Button1" runat="server" CssClass="btnIp" Text="Làm Tươi" OnClick="Button1_Click"/>
                 </div>
             </div>
             <div class="Tbl-Contairner-QL">
@@ -61,10 +61,10 @@
                         Tên T
                     </div>
                     <div class="type-collumm1">
-                        Mã DM
+                        Danh Mục
                     </div>
                     <div class="type-collumm1">
-                        Mã TL
+                        Thể Loại
                     </div>
                     <div class="type-collumm1">
                         Mã TG
@@ -95,10 +95,10 @@
                                 <%#Eval("TenT") %>
                             </div>
                             <div class="type-collumm1 newheight">
-                                <%#Eval("MaDM") %>
+                                <%#Eval("TenDM") %>
                             </div>
                             <div class="type-collumm1 newheight">
-                                <%#Eval("MaTL") %>
+                                <%#Eval("TenTL") %>
                             </div>
                             <div class="type-collumm1 newheight">
                                 <%#Eval("MaTG") %>
