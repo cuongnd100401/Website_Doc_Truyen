@@ -18,9 +18,9 @@
                 </div>
                 <asp:Label ID="lbThongBao" runat="server" CssClass="lbTB-QL"></asp:Label>
                 <div class="Input-Contairner-QL-Item" style="display: flex; justify-content: space-around; height: 70px;">
-                    <asp:Button ID="Button2" runat="server" CssClass="btnIp" Text="Thêm SP" OnClick="Button2_Click" />
-                    <asp:Button ID="Button3" runat="server" CssClass="btnIp" Text="Sửa SP" OnClick="Button3_Click" />
-                    <asp:Button ID="Button4" runat="server" CssClass="btnIp" Text="Xóa SP" OnClick="Button4_Click" />
+                    <asp:Button ID="Button2" runat="server" CssClass="btnIp" Text="Thêm TG" OnClick="Button2_Click" />
+                    <asp:Button ID="Button3" runat="server" CssClass="btnIp" Text="Sửa TG" OnClick="Button3_Click" />
+                    <asp:Button ID="Button4" runat="server" CssClass="btnIp" Text="Xóa TG" OnClick="Button4_Click" />
                     <asp:Button ID="Button1" runat="server" CssClass="btnIp" Text="Làm Tươi" OnClick="Button1_Click"/>
                 </div>
             </div>

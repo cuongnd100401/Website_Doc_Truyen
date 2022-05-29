@@ -38,15 +38,15 @@
                     <i class="fa-solid fa-book" style="margin-right: 10px;"></i>
                     QUẢN LÝ TRUYỆN
                 </a>
-                <a href="QLspPage.aspx" class="menu-It-Ad">
+                <a href="QLChuongTruyen.aspx" class="menu-It-Ad">
                     <i class="fa-solid fa-book" style="margin-right: 10px;"></i>
                     QUẢN LÝ CHƯƠNG TRUYỆN
                 </a>
-                <a href="QLTV.aspx" class="menu-It-Ad">
+                <a href="QLTacGia.aspx" class="menu-It-Ad">
                     <i class="fas fa-users" style="margin-right: 10px;"></i>
                     QUẢN LÝ TÁC GIẢ
                 </a>
-                <a href="TTAdmin.aspx" class="menu-It-Ad">
+                <a href="#" class="menu-It-Ad">
                     <i class="fas fa-user" style="margin-right: 10px;"></i>
                     THÔNG TIN ADMIN
                 </a>

@@ -17,10 +17,19 @@ namespace Web_Doc_Truyen
         SqlDataAdapter dad = new SqlDataAdapter();
         protected void Page_Load(object sender, EventArgs e)
         {
+            ktSS();
             con = new SqlConnection(str);
             con.Open();
             loadData();
             txtMaT.Enabled = false;
+        }
+        public void ktSS()
+        {
+
+            if ((Boolean)Session["admin"] == false)
+            {
+                Response.Redirect("HomePage.aspx");
+            }
         }
         public void loadData()
         {

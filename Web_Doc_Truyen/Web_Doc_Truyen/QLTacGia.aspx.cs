@@ -17,9 +17,18 @@ namespace Web_Doc_Truyen
         SqlDataAdapter dad = new SqlDataAdapter();
         protected void Page_Load(object sender, EventArgs e)
         {
+            ktSS();
             con = new SqlConnection(str);
             con.Open();
             loadData();
+        }
+        public void ktSS()
+        {
+
+            if ((Boolean)Session["admin"] == false)
+            {
+                Response.Redirect("HomePage.aspx");
+            }
         }
         public void loadData()
         {
@@ -87,6 +96,7 @@ namespace Web_Doc_Truyen
         {
             reset();
             loadData();
+            lbThongBao.Text = "";
         }
 
         protected void Button3_Click(object sender, EventArgs e)
@@ -94,6 +104,7 @@ namespace Web_Doc_Truyen
             if (txtMaTG.Text.Length == 0)
             {
                 lbThongBao.Text = "Vui lòng chọn Tác Giả để sửa";
+                return;
             }
             if (txtTenTG.Text.Length == 0)
             {
@@ -117,7 +128,24 @@ namespace Web_Doc_Truyen
 
         protected void Button4_Click(object sender, EventArgs e)
         {
-             
+            if (txtMaTG.Text.Length == 0)
+            {
+                lbThongBao.Text = "Vui lòng chọn Tác Giả để xóa";
+                return;
+            }
+            try
+            {
+                com = con.CreateCommand();
+                com.CommandText = "delete from tblTacGia where MaTG= " + txtMaTG.Text;
+                com.ExecuteNonQuery();
+                lbThongBao.Text = "Xóa thành công";
+                reset();
+                loadData();
+            }
+            catch (Exception ex)
+            {
+                lbThongBao.Text = "Xóa thất bại!";
+            }
         }
     }
 }

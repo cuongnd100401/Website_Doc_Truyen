@@ -2124,6 +2124,7 @@
     <Content Include="imgTruyen\mevokhongloive.png" />
     <Content Include="imgTruyen\nghichhanh.png" />
     <Content Include="LoginPage.aspx" />
+    <Content Include="QLChuongTruyen.aspx" />
     <Content Include="QLTacGia.aspx" />
     <Content Include="QLTruyen.aspx" />
     <Content Include="TruyenDetail.aspx" />
@@ -2184,6 +2185,13 @@
       <DependentUpon>MainSite.Master</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="QLChuongTruyen.aspx.cs">
+      <DependentUpon>QLChuongTruyen.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="QLChuongTruyen.aspx.designer.cs">
+      <DependentUpon>QLChuongTruyen.aspx</DependentUpon>
+    </Compile>
     <Compile Include="QLTacGia.aspx.cs">
       <DependentUpon>QLTacGia.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

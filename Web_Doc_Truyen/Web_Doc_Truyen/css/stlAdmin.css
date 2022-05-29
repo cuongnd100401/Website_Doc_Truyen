@@ -273,6 +273,10 @@
     width: 220px;
     height: 30px;
 }
+.ip-MaT {
+    width: 100px;
+    height: 30px;
+}
 
 .btnIp {
     width: 80px;
@@ -336,6 +340,17 @@
 
 .type-collumm5 {
     width: 16%;
+    height: 39px;
+    border: 1px solid #ccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 13px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.NDCT {
+    width: 56%;
     height: 39px;
     border: 1px solid #ccc;
     display: flex;

@@ -39,15 +39,15 @@
                     <a href="QLTruyen.aspx" class="nav-Item-HP-Ad">
                         <p style="font-size: 20px; font-weight: 600; margin-left: 10px;">Quản lý Truyện</p>
                     </a>
-                    <a href="QLDH.aspx" class="nav-Item-HP-Ad">
+                    <a href="QLChuongTruyen.aspx" class="nav-Item-HP-Ad">
                         <p style="font-size: 20px; font-weight: 600; margin-left: 10px;">Quản lý Chương Truyện</p>
                     </a>
                 </div>
                 <div class="Item">
-                    <a href="QLTV.aspx" class="nav-Item-HP-Ad">
+                    <a href="QLTacGia.aspx" class="nav-Item-HP-Ad">
                         <p style="font-size: 20px; font-weight: 600; margin-left: 10px;">Quản lý Tác Giả</p>
                     </a>
-                    <a href="TTAdmin.aspx" class="nav-Item-HP-Ad">
+                    <a href="#" class="nav-Item-HP-Ad">
                         <p style="font-size: 20px; font-weight: 600; margin-left: 10px;">Thông Tin Quản Trị</p>
                     </a>
                 </div>
